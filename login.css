@@ -1,0 +1,132 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background-color: #ff7f50;
+  color: black;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+#input_container {
+  width: 300px;
+}
+
+#input_group {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#input_group input {
+  padding: 15px 3rem 15px 15px;
+  width: 100%;
+  background: #112d37;
+  outline: none;
+  color: white;
+  border: 1px solid #215164;
+  border-radius: 4px;
+  -webkit-transition: width 0.9s height 0.9s border-radius 0.9s;
+  transition: width 0.9s height 0.9s border-radius 0.9s;
+  font-size: 14px;
+}
+
+#input_group input::-webkit-input-placeholder {
+  color: #346a80;
+}
+
+#input_group input:-ms-input-placeholder {
+  color: #346a80;
+}
+
+#input_group input::-ms-input-placeholder {
+  color: #346a80;
+}
+
+#input_group input::placeholder {
+  color: #346a80;
+}
+
+#input_group input::focus {
+  border: 1px solid #55b7dd;
+  -webkit-box-shadow: 0px 0px 2px 2px #55b7dd34;
+          box-shadow: 0px 0px 2px 2px #55b7dd34;
+}
+
+#input_group #show {
+  position: absolute;
+  right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 99;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#password_strenght {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3px;
+}
+
+#strenght_label {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+#strenght_percent {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 5px;
+  border-radius: 10px;
+  display: block;
+  background: #eee;
+}
+
+#strenght_percent span {
+  display: block;
+  height: 100%;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  border-radius: 10px;
+}
+
+#strenght_percent span .weak {
+  background: red;
+  width: 33%;
+}
+
+#strenght_percent span .average {
+  background: yellow;
+  width: 66%;
+}
+
+#strenght_percent span .strong {
+  background: green;
+  width: 100%;
+}
+
+.createPassword button {
+  background-color: yellowgreen;
+  border-radius: 10px;
+  border: 1px solid;
+  outline: none;
+}
+/*# sourceMappingURL=login.css.map */
